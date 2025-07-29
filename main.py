@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from telegram import Bot
 
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv()
 
 DB_NAME = os.getenv("DB_NAME")
