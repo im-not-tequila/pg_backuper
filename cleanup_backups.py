@@ -4,6 +4,7 @@ import logging
 from dotenv import load_dotenv
 
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv()
 
 BACKUP_DIR = os.getenv("BACKUP_DIR", "backups")
